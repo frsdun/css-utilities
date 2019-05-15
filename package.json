@@ -1,0 +1,25 @@
+{
+  "name": "css-utilities",
+  "version": "1.0.0",
+  "description": "A collection of simple css utility classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node ./node_modules/node-sass/bin/node-sass ./scss/utilities.scss ./css/utilities.css",
+    "minify-css": "cleancss -o css/utilities.min.css css/utilities.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frsdun/css-utilities.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frsdun/css-utilities/issues"
+  },
+  "homepage": "https://github.com/frsdun/css-utilities#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "clean-css-cli": "^4.2.1"
+  }
+}

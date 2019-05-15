@@ -1,0 +1,57 @@
+/* Spacing: Padding and Margins */
+
+// p = padding, m = margin
+// t,b,l,r = top, bottom, left, right
+// x = horizontal, y = vertical
+// Example: mb-5 = margin bottom size 5
+
+// Set the spacing here and the "spacing-builder" will create a padding and margin property set for row in the map.
+$spacing-map:(
+    0 : 0,
+    1 : 1rem,
+    2 : 2rem,
+    3 : 3rem,
+    4 : 4rem,
+    5 : 6rem,
+    6 : 8rem
+);
+
+
+@mixin spacing-builder($property, $prefix, $suffix, $size){
+    .#{$prefix}-#{$suffix}{
+        #{$property}: $size;
+    }
+    .#{$prefix}t-#{$suffix}{
+        #{$property}-top: $size;
+    }
+    .#{$prefix}b-#{$suffix}{
+        #{$property}-bottom: $size;
+    }
+    .#{$prefix}l-#{$suffix}{
+        #{$property}-left: $size;
+    }
+    .#{$prefix}r-#{$suffix}{
+        #{$property}-right: $size;
+    }
+    .#{$prefix}y-#{$suffix}{
+        #{$property}-top: $size;
+        #{$property}-bottom: $size;
+    }
+    .#{$prefix}x-#{$suffix}{
+        #{$property}-left: $size;
+        #{$property}-right: $size;
+    }
+}
+
+@each $key, $value in $spacing-map {
+    @include spacing-builder(padding, p, $key, $value);
+}
+
+@each $key, $value in $spacing-map {
+    @include spacing-builder(margin, m, $key, $value);
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
