@@ -1,0 +1,17 @@
+/* ------------------------ Shadows ------------------------ */
+
+@mixin shadow-builder($suffix, $h-offset, $v-offset, $blur, $spread, $color){
+    .shadow-#{$suffix}{
+        box-shadow: #{$h-offset} #{$v-offset} #{$blur} #{$spread} #{$color};
+    }
+}
+
+@include shadow-builder(sm, 0px, 5px, 10px, 0px, rgba(0,0,0,0.1));
+@include shadow-builder(md, 0px, 10px, 20px, 0px, rgba(0,0,0,0.2));
+@include shadow-builder(lg, 0px, 10px, 30px, 0px, rgba(0,0,0,0.3));
+
+.shadow-none{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

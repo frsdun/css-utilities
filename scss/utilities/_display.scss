@@ -1,0 +1,7 @@
+/* ------------------------ Display ------------------------ */
+
+$display-types: none, inline, inline-block, block, table;
+
+@each $type in $display-types {
+    .display-#{$type} { display: $type; }
+}

@@ -1,11 +1,11 @@
-/* Spacing: Padding and Margins */
+/* ------------------------ Spacing: Padding and Margins ------------------------ */
 
 // p = padding, m = margin
 // t,b,l,r = top, bottom, left, right
 // x = horizontal, y = vertical
 // Example: mb-5 = margin bottom size 5
 
-// Set the spacing here and the "spacing-builder" will create a padding and margin property set for row in the map.
+// Set the spacing here and the "spacing-builder" will create a padding and margin property set for each row in the map.
 $spacing-map:(
     0 : 0,
     1 : 1rem,
@@ -15,7 +15,6 @@ $spacing-map:(
     5 : 6rem,
     6 : 8rem
 );
-
 
 @mixin spacing-builder($property, $prefix, $suffix, $size){
     .#{$prefix}-#{$suffix}{

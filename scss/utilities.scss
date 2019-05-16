@@ -5,8 +5,13 @@
 */
 
 // Choose which modules you would like imported
-@import "spacing";
-@import "display";
-@import "flexbox";
-@import "text";
-@import "shadows";
+@import "utilities/display";
+@import "utilities/flexbox";
+@import "utilities/float";
+@import "utilities/image";
+@import "utilities/overflow";
+@import "utilities/position";
+@import "utilities/shadows";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/text";

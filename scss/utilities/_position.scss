@@ -1,0 +1,13 @@
+/* ------------------------ Position ------------------------ */
+
+$positions: static, relative, absolute, fixed, sticky;
+
+@each $position in $positions {
+    .position-#{$position} { position: $position; }
+}
+
+$screen-sides: top, bottom, left, right;
+
+@each $side in $screen-sides {
+    .position-#{$side} { #{$side}: 0; }
+}

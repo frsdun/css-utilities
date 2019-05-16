@@ -1,0 +1,9 @@
+/* ------------------------ Overflow ------------------------ */
+
+$overflow-types: visible, auto, hidden, scroll;
+
+@each $type in $overflow-types {
+    .overflow-#{$type} { overflow: $type; }
+    .overflow-x-#{$type} { overflow-x : $type; }
+    .overflow-y-#{$type} { overflow-y: $type; }
+}
