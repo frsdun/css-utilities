@@ -1,8 +1,9 @@
 # css-utilities
 A collection of simple css utility classes
 
-Build it with: `npm run build`
+Build: `npm run build`
 
+### File structure
 ```
 css
 ├─── utilities.css
@@ -23,3 +24,6 @@ scss
         ├─── _spacing.scss
         └─── _text.scss
 ```
+### Dev dependencies
+* node-sass
+* uglifycss
