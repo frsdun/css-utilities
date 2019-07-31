@@ -1,8 +1,4 @@
-/*! 
-* frsdun/css-utilities
-* https://github.com/frsdun/css-utilities
-* MIT licence
-*/
+/*! frsdun/css-utilities | MIT License | https://github.com/frsdun/css-utilities */
 /* ------------------------ Display ------------------------ */
 .display-none {
   display: none; }
@@ -19,17 +15,45 @@
 .display-table {
   display: table; }
 
-/* ------------------------ Flexbox ------------------------ */
 .display-flex {
   display: flex; }
 
-.display-inline-flex {
-  display: inline-flex; }
-
+/* ------------------------ Flexbox ------------------------ */
 .flex-row {
-  flex-direction: row; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.flex-row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.flex-row-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
 
 .flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.flex {
+  display: flex; }
+
+.flex-inline {
+  display: inline-flex; }
+
+.flex-direction-row {
+  flex-direction: row; }
+
+.flex-direction-col {
   flex-direction: column; }
 
 .flex-center {
@@ -132,13 +156,13 @@
 
 /* ------------------------ Shadows ------------------------ */
 .shadow-sm {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1); }
 
 .shadow-md {
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2); }
 
 .shadow-lg {
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.3); }
 
 .shadow-none {
   -webkit-box-shadow: none;
@@ -523,22 +547,28 @@
   margin-left: 8rem;
   margin-right: 8rem; }
 
+.mr-auto {
+  margin-right: auto; }
+
+.ml-auto {
+  margin-left: auto; }
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto; }
 
 /* ------------------------ Text ------------------------ */
-.text-justify {
-  text-align: justify; }
-
-.text-left {
-  text-align: left; }
-
 .text-center {
   text-align: center; }
 
 .text-left {
+  text-align: left; }
+
+.text-right {
   text-align: right; }
+
+.text-justify {
+  text-align: justify; }
 
 .text-upper {
   text-transform: uppercase; }
@@ -548,3 +578,6 @@
 
 .text-caps {
   text-transform: capitalize; }
+
+.text-muted {
+  color: grey; }

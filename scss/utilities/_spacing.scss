@@ -50,6 +50,14 @@ $spacing-map:(
     @include spacing-builder(margin, m, $key, $value);
 }
 
+.mr-auto{
+    margin-right: auto;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
 .mx-auto{
     margin-left: auto;
     margin-right: auto;

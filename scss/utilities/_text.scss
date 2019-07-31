@@ -1,17 +1,20 @@
 /* ------------------------ Text ------------------------ */
 
-.text-justify{
-    text-align: justify;
-}
-.text-left{
-    text-align: left;
-}
+// Horizontal position
 .text-center{
     text-align: center;
 }
 .text-left{
+    text-align: left;
+}
+.text-right{
     text-align: right;
 }
+.text-justify{
+    text-align: justify;
+}
+
+// Case
 .text-upper{
     text-transform: uppercase;
 }
@@ -20,4 +23,9 @@
 }
 .text-caps{
     text-transform: capitalize;
+}
+
+// Color
+.text-muted{
+    color: grey;
 }

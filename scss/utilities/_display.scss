@@ -1,6 +1,6 @@
 /* ------------------------ Display ------------------------ */
 
-$display-types: none, inline, inline-block, block, table;
+$display-types: none, inline, inline-block, block, table, flex;
 
 @each $type in $display-types {
     .display-#{$type} { display: $type; }

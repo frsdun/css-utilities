@@ -6,9 +6,9 @@
     }
 }
 
-@include shadow-builder(sm, 0px, 5px, 10px, 0px, rgba(0,0,0,0.1));
-@include shadow-builder(md, 0px, 10px, 20px, 0px, rgba(0,0,0,0.2));
-@include shadow-builder(lg, 0px, 10px, 30px, 0px, rgba(0,0,0,0.3));
+@include shadow-builder(sm, 0, 0.5rem, 1.0rem, 0, rgba(0,0,0,0.1));
+@include shadow-builder(md, 0, 1.0rem, 2.0rem, 0, rgba(0,0,0,0.2));
+@include shadow-builder(lg, 0, 1.0rem, 3.0rem, 0, rgba(0,0,0,0.3));
 
 .shadow-none{
     -webkit-box-shadow: none;

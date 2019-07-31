@@ -1,9 +1,14 @@
 # css-utilities
 A collection of simple css utility classes
 
+Build it with: `npm run build`
+
 ```
+css
+├─── utilities.css
+└─── utilities.min.css
+
 scss
-│
 ├─── utilities.scss
 │
 └─── utilities

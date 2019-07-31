@@ -1,24 +1,24 @@
 {
-  "name": "css-utilities",
-  "version": "1.0.0",
-  "description": "A collection of simple css utility classes",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node ./node_modules/node-sass/bin/node-sass ./scss/utilities.scss ./css/utilities.css",
-    "minify-css": "node minify.js css/utilities.css css/utilities.min.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frsdun/css-utilities.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/frsdun/css-utilities/issues"
-  },
-  "homepage": "https://github.com/frsdun/css-utilities#readme",
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  }
+    "name": "css-utilities",
+    "version": "1.0.0",
+    "description": "A collection of simple css utility classes",
+    "scripts": {
+        "build-scss": "node ./node_modules/node-sass/bin/node-sass ./scss/utilities.scss ./css/utilities.css",
+        "minify-css": "node ./node_modules/uglifycss/uglifycss ./css/utilities.css > ./css/utilities.min.css",
+        "build": "npm run build-scss && npm run minify-css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frsdun/css-utilities.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frsdun/css-utilities/issues"
+    },
+    "homepage": "https://github.com/frsdun/css-utilities#readme",
+    "devDependencies": {
+        "node-sass": "^4.12.0",
+        "uglifycss": "0.0.29"
+    }
 }
